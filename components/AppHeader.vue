@@ -16,7 +16,7 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
-span {
+.nav {
   writing-mode: tb-rl;
   transform: rotate(180deg);
 }
