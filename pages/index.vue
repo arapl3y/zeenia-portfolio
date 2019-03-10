@@ -1,11 +1,17 @@
 <template>
-  <section class="container">
-    zeenia  kaur
+  <section>
+    <app-header />
   </section>
 </template>
 
 <script>
-export default {}
+import AppHeader from '@/components/AppHeader.vue'
+
+export default {
+  components: {
+    AppHeader
+  }
+}
 </script>
 
 <style>
