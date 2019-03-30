@@ -1,0 +1,43 @@
+// SPACING
+.h-padded {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  margin: 0 auto;
+
+  @media (min-width: $small) {
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+  }
+
+  @media (min-width: $mega) {
+    padding-right: 2.25rem;
+    padding-left: 2.25rem;
+  }
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.column {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.horizontal {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flex {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-3 {
+  flex: 3;
+}

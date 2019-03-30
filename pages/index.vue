@@ -1,17 +1,9 @@
 <template>
-  <section>
-    <app-header />
-  </section>
+  <section/>
 </template>
 
 <script>
-import AppHeader from '@/components/AppHeader.vue'
-
-export default {
-  components: {
-    AppHeader
-  }
-}
+export default {}
 </script>
 
 <style>
