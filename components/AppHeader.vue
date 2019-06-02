@@ -1,10 +1,11 @@
 <template>
-  <section class="column h-padded container">
-    <span class="horizontal">zeenia</span>
+  <header class="column h-padded container">
+    <div class="horizontal upper">
+      <span>zeenia</span>
+      <span class="link">about me</span>
+    </div>
     <span class="horizontal">kaur</span>
-
-    <p>product designer</p>
-  </section>
+  </header>
 </template>
 
 <script>
@@ -12,10 +13,14 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
-// .nav {
-//   writing-mode: tb-rl;
-//   transform: rotate(180deg);
-// }
+header {
+  margin-bottom: 9rem;
+}
+
+.upper {
+  justify-content: space-between;
+  align-items: center;
+}
 
 span {
   font-size: 16rem;
@@ -33,6 +38,10 @@ span {
 
   &:last-of-type {
     justify-content: flex-end;
+  }
+
+  &.link {
+    font-size: 1.875rem;
   }
 }
 </style>

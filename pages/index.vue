@@ -1,15 +1,18 @@
 <template>
   <section>
-    <ul>
-      <li v-for="project in projectPosts">
-        {{ project.title }}
-      </li>
-    </ul>
+    <template v-for="project in projectPosts">
+      <project-card :project="project" />
+    </template>
   </section>
 </template>
 
 <script>
+import ProjectCard from '@/components/ProjectCard.vue'
+
 export default {
+  components: {
+    ProjectCard
+  },
   computed: {
     projectPosts() {
       return this.$store.state.projectPosts
@@ -18,5 +21,5 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 </style>
