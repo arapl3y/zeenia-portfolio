@@ -33,6 +33,7 @@ collections:
     create: true
     slug: '{{slug}}'
     format: 'json'
+    identifier_field: description
     fields:
      - {
           label: 'Profile Image',
