@@ -1,10 +1,14 @@
 <template>
   <header class="column h-padded container">
     <div class="horizontal upper">
-      <span>zeenia</span>
-      <span class="link">about me</span>
+      <h1>zeenia</h1>
+      <nuxt-link :to="{ path: '/about'}" tag="span" class="link">
+        about me
+      </nuxt-link>
     </div>
-    <span class="horizontal">kaur</span>
+    <h1 class="horizontal">
+      kaur
+    </h1>
   </header>
 </template>
 
@@ -22,10 +26,7 @@ header {
   align-items: center;
 }
 
-span {
-  font-size: 16rem;
-  font-weight: normal;
-  color: $black;
+h1 {
   margin: 0;
 
   .menu {
