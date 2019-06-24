@@ -35,7 +35,7 @@ collections:
     format: 'json'
     identifier_field: description
     fields:
-     - {
+      - {
           label: 'Profile Image',
           name: 'thumbnail',
           widget: 'image',
