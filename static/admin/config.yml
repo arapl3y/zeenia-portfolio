@@ -26,3 +26,16 @@ collections:
           required: false,
         }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  - name: 'about'
+    label: 'About'
+    folder: 'content/about'
+    create: true
+    slug: 'about'
+    format: 'json'
+    fields:
+      - { label: 'Description', name: 'description', widget: 'markdown'}
+      - { label: 'Industries', name: 'industries', widget: 'markdown'}
+      - { label: 'Experience', name: 'experience', widget: 'markdown'}
+      - { label: 'Hobbies', name: 'hobbies', widget: 'markdown'}
+      - { label: 'Social', name: 'social', widget: 'markdown'}
