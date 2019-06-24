@@ -1,5 +1,5 @@
 <template>
-  <div class="h-padded container">
+  <div>
     <img :src="project.thumbnail" alt="">
     <p>{{ project.title }}</p>
   </div>
@@ -17,7 +17,25 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-img {
-  max-width: 50rem;
+div {
+  margin-bottom: 8rem;
+
+  &:nth-of-type(3n + 1) {
+    align-self: flex-start;
+  }
+
+  &:nth-of-type(3n + 2) {
+    align-self: center;
+    img {
+      width: 40rem;
+    }
+  }
+
+  &:nth-of-type(3n + 3) {
+    align-self: flex-end;
+    img {
+      width: 30rem;
+    }
+  }
 }
 </style>
