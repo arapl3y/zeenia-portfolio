@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="container h-padded column">
     <template v-for="project in projectPosts">
       <project-card :project="project" />
     </template>
