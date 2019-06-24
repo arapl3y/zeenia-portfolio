@@ -1,0 +1,17 @@
+h1 {
+  font-size: 10rem;
+  font-weight: normal;
+  color: $black;
+
+  @media (min-width: $mid) {
+    font-size: 12rem;
+  }
+
+  @media (min-width: $big) {
+    font-size: 14rem;
+  }
+
+  @media (min-width: $mega) {
+    font-size: 16rem;
+  }
+}
