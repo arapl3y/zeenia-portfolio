@@ -31,9 +31,15 @@ collections:
     label: 'About'
     folder: 'content/about'
     create: true
-    slug: 'about'
+    slug: '{{slug}}'
     format: 'json'
     fields:
+     - {
+          label: 'Profile Image',
+          name: 'thumbnail',
+          widget: 'image',
+          required: true,
+        }
       - { label: 'Description', name: 'description', widget: 'markdown'}
       - { label: 'Industries', name: 'industries', widget: 'markdown'}
       - { label: 'Experience', name: 'experience', widget: 'markdown'}
