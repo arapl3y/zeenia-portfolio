@@ -33,8 +33,9 @@ collections:
     create: true
     slug: '{{slug}}'
     format: 'json'
-    identifier_field: description
+    identifier_field: name
     fields:
+      - { label: 'Name', name: 'name', widget: 'string'}
       - {
           label: 'Profile Image',
           name: 'thumbnail',
