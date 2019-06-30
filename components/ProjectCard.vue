@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <nuxt-link :to="{ name: 'projects-slug', params: { slug: slug } }" tag="div">
     <img :src="project.thumbnail" alt="">
     <p>{{ project.title }}</p>
-  </div>
+  </nuxt-link>
 </template>
 
 <script>
@@ -12,6 +12,11 @@ export default {
       type: Object,
       default: () => {}
     }
+  },
+  computed: {
+    slug() {
+      return this.project._path.split('/')[2]
+    }
   }
 }
 </script>
@@ -19,6 +24,7 @@ export default {
 <style lang="scss" scoped>
 div {
   margin-bottom: 8rem;
+  cursor: pointer;
 
   &:nth-of-type(3n + 1) {
     align-self: flex-start;
