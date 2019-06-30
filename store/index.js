@@ -7,15 +7,6 @@ export const state = () => ({
   aboutData: []
 })
 
-export const mutations = {
-  SET_PROJECTS(state, data) {
-    state.projectPosts = data
-  },
-  SET_ABOUT(state, data) {
-    state.aboutData = data
-  }
-}
-
 export const actions = {
   async nuxtServerInit({ dispatch }) {
     await dispatch('getProjectPosts')
@@ -44,5 +35,22 @@ export const actions = {
     }))
 
     commit('SET_ABOUT', about.reverse())
+  }
+}
+
+export const mutations = {
+  SET_PROJECTS(state, data) {
+    state.projectPosts = data
+  },
+  SET_ABOUT(state, data) {
+    state.aboutData = data
+  }
+}
+
+export const getters = {
+  getProjectBySlug: state => slug => {
+    return state.projectPosts.find(
+      project => project._path.split('/')[2] === slug
+    )
   }
 }
