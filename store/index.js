@@ -52,5 +52,10 @@ export const getters = {
     return state.projectPosts.find(
       project => project._path.split('/')[2] === slug
     )
+  },
+  getRandomProject(state) {
+    const random = Math.floor(Math.random() * state.projectPosts.length)
+
+    return state.projectPosts[random]
   }
 }
