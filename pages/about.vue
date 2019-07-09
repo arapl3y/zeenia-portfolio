@@ -27,6 +27,7 @@
 <script>
 export default {
   name: 'About',
+  layout: 'dark',
   computed: {
     aboutData() {
       return this.$store.state.aboutData[0]
@@ -37,14 +38,12 @@ export default {
 
 <style scoped lang="scss">
 .about {
-  background-color: $black;
-  color: #fff;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   padding-bottom: 4rem;
-  max-width: 50rem;
+  max-width: 50em;
 
   & .row:nth-of-type(odd) {
     justify-content: flex-start;
@@ -56,21 +55,22 @@ export default {
 }
 
 .row {
+  margin-top: 5rem;
   width: 100%;
   display: flex;
   align-items: center;
 
   p {
-    max-width: 15rem;
-    font-size: 1.5rem;
+    max-width: 20rem;
+    font-size: 1.75rem;
     margin: 0;
     z-index: 1;
   }
 }
 
 .profile-image {
+  position: fixed;
   max-width: 25rem;
-  position: absolute;
   top: 15rem;
   z-index: 0;
 }

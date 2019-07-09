@@ -16,9 +16,9 @@ export default {
 </script>
 
 
-<style lang="scss" scoped>
+<style scoped lang="scss">
 .root {
-  background-color: #fff;
-  color: $black;
+  background-color: $black;
+  color: #fff;
 }
 </style>
