@@ -25,7 +25,18 @@ collections:
           widget: 'image',
           required: false,
         }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - {
+          label: 'Category Tags',
+          name: 'tags',
+          widget: 'list',
+          required: false
+        }
+      - {
+          label: 'Description',
+          name: 'descriptionTexts',
+          widget: 'list',
+          field: { label: Description Text, name: descriptionText, widget: 'markdown' }
+        }
 
   - name: 'about'
     label: 'About'
