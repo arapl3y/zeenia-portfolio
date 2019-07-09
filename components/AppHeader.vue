@@ -1,12 +1,14 @@
 <template>
   <header :class="{ dark: isDark }" class="column h-padded container">
-    <h1 class="horizontal">
-      zeenia
-    </h1>
+    <div>
+      <h1 class="horizontal">
+        zeenia
+      </h1>
 
-    <h1 class="horizontal">
-      kaur
-    </h1>
+      <h1 class="horizontal">
+        kaur
+      </h1>
+    </div>
 
     <div class="nav">
       <nuxt-link v-if="!isDark" :to="{ path: '/about'}" tag="span" class="link">
@@ -45,22 +47,25 @@ export default {
 
 <style lang="scss" scoped>
 header {
-  margin-bottom: 9rem;
   position: relative;
 
   &.dark {
     background-color: $black;
     color: #fff;
     margin: 0;
-    padding-bottom: 4rem;
     align-items: center;
     justify-content: center;
     display: flex;
 
+    div {
+      margin-top: 2rem;
+    }
+
     h1 {
       color: #fff;
       font-size: 2rem;
-      width: 20%;
+      width: 9.5rem;
+      line-height: 0.8;
     }
   }
 }
@@ -68,7 +73,7 @@ header {
 .nav {
   position: absolute;
   right: 1rem;
-  top: 1rem;
+  top: 25%;
 }
 
 h1 {
