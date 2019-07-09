@@ -1,10 +1,20 @@
 <template>
   <div class="container h-padded">
     <h2>{{ project.title }}</h2>
-    <p>{{ project.body }}</p>
+    <p> {{ tags }}</p>
+    <p>{{ project.descriptionTexts[0] }}</p>
+
+
+
     <div class="img-container">
       <img :src="project.thumbnail">
+
+      <p v-for="(text, index) in project.descriptionTexts.slice(1)" :key="index">
+        {{ text }}
+      </p>
     </div>
+
+
 
 
     <div class="suggestions">
@@ -23,6 +33,9 @@ export default {
     project() {
       return this.$store.getters.getProjectBySlug(this.$route.params.slug)
     },
+    tags() {
+      return this.project.tags.join(' / ')
+    },
     randomProject() {
       return this.$store.getters.getRandomProject
     }
@@ -35,11 +48,23 @@ h2 {
   margin-bottom: 10rem;
 }
 
+p {
+  align-self: flex-start;
+  width: 50%;
+}
+
 .img-container {
   margin-top: 8rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-flow: column nowrap;
+
+  p {
+    align-self: flex-end;
+    width: 50%;
+    margin-top: 8rem;
+  }
 
   img {
     margin: 0 auto;
