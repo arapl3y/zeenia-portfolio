@@ -2,16 +2,21 @@
   <div class="container h-padded">
     <h2>{{ project.title }}</h2>
     <p> {{ tags }}</p>
-    <!-- <p>{{ project.descriptionTexts[0] }}</p> -->
+    <p>{{ project.descriptionTexts[0].descriptionText }}</p>
 
 
 
     <div class="img-container">
       <img :src="project.thumbnail">
 
-      <!-- <p v-for="(text, index) in project.descriptionTexts.slice(1)" :key="index">
-        {{ text }}
-      </p> -->
+      <template v-for="(value, index) in project.descriptionTexts.slice(0)">
+        <div :key="index">
+          <img :src="value.descriptionImage" class="description-image">
+          <p class="description-text">
+            {{ value.descriptionText }}
+          </p>
+        </div>
+      </template>
     </div>
 
 
@@ -70,6 +75,14 @@ p {
   img {
     margin: 0 auto;
     max-width: 60rem;
+  }
+
+  div {
+    margin-top: 10rem;
+  }
+
+  .description-image {
+    max-width: 30rem;
   }
 }
 

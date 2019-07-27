@@ -54,6 +54,10 @@ export const getters = {
     )
   },
   getOtherRandomProject: state => slug => {
+    if (state.projectPosts.length === 1) {
+      return state.projectPosts[0]
+    }
+
     let random = Math.floor(Math.random() * state.projectPosts.length)
 
     // Keep finding a new random number until slugs don't match
