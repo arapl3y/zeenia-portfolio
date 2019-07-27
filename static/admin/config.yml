@@ -32,7 +32,7 @@ collections:
           required: false
         }
       - label: 'Description'
-        name: 'descriptionTexts'
+        name: 'descriptionElements'
         widget: 'list'
         fields:
           - { label: Description Text, name: descriptionText, widget: 'markdown' }

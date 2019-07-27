@@ -2,16 +2,16 @@
   <div class="container h-padded">
     <h2>{{ project.title }}</h2>
     <p> {{ tags }}</p>
-    <p>{{ project.descriptionTexts[0] }}</p>
+    <!-- <p>{{ project.descriptionTexts[0] }}</p> -->
 
 
 
     <div class="img-container">
       <img :src="project.thumbnail">
 
-      <p v-for="(text, index) in project.descriptionTexts.slice(1)" :key="index">
+      <!-- <p v-for="(text, index) in project.descriptionTexts.slice(1)" :key="index">
         {{ text }}
-      </p>
+      </p> -->
     </div>
 
 
