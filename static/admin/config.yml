@@ -31,14 +31,12 @@ collections:
           widget: 'list',
           required: false
         }
-      - {
-          label: 'Description',
-          name: 'descriptionTexts',
-          widget: 'list',
-          fields:
-            - { label: Description Text, name: descriptionText, widget: 'markdown' }
-            - { label: Description Image, name: descriptionImage, widget: 'image', required: false }
-        }
+      - label: 'Description'
+        name: 'descriptionTexts'
+        widget: 'list'
+        fields:
+          - { label: Description Text, name: descriptionText, widget: 'markdown' }
+          - { label: Description Image, name: descriptionImage, widget: 'image' }
 
   - name: 'about'
     label: 'About'
