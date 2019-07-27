@@ -15,14 +15,12 @@
     </div>
 
 
-
-
-    <div class="suggestions">
+    <nuxt-link :to="{ name: 'projects-slug', params: { slug: randomProjectSlug } }" class="suggestions" tag="div">
       <p>Something else to check out</p>
 
       <img :src="randomProject.thumbnail">
       <p>{{ randomProject.title }}</p>
-    </div>
+    </nuxt-link>
   </div>
 </template>
 
@@ -32,6 +30,9 @@ export default {
   computed: {
     project() {
       return this.$store.getters.getProjectBySlug(this.$route.params.slug)
+    },
+    randomProjectSlug() {
+      return this.randomProject._path.split('/')[2]
     },
     tags() {
       return this.project.tags.join(' / ')
@@ -68,6 +69,7 @@ p {
 
   img {
     margin: 0 auto;
+    max-width: 60rem;
   }
 }
 
