@@ -33,7 +33,7 @@ collections:
         }
       - label: 'Description'
         name: 'descriptionTexts'
-        widget: 'list'
+        widget: 'object'
         fields:
           - { label: Description Text, name: descriptionText, widget: 'markdown' }
           - { label: Description Image, name: descriptionImage, widget: 'image' }
