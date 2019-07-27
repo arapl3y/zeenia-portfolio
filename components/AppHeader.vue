@@ -1,14 +1,20 @@
 <template>
   <header :class="{ dark: isDark }" class="column h-padded container">
-    <div>
-      <h1 class="horizontal">
-        zeenia
-      </h1>
+    <nuxt-link :to="{ path: '/' }" tag="div" class="logo">
+      <template v-if="!isDark">
+        <h1 class="horizontal">
+          zeenia
+        </h1>
 
-      <h1 class="horizontal">
-        kaur
-      </h1>
-    </div>
+        <h1 class="horizontal">
+          kaur
+        </h1>
+      </template>
+
+      <template v-else>
+        <img src="/images/zk-logo.svg" class="logo">
+      </template>
+    </nuxt-link>
 
     <div class="nav">
       <nuxt-link v-if="!isDark" :to="{ path: '/about'}" tag="span" class="link">
@@ -61,13 +67,14 @@ header {
       margin-top: 2rem;
     }
 
-    h1 {
-      color: #fff;
-      font-size: 2rem;
-      width: 9.5rem;
-      line-height: 0.8;
+    .logo {
+      max-width: 10rem;
     }
   }
+}
+
+.logo {
+  cursor: pointer;
 }
 
 .nav {
