@@ -38,7 +38,7 @@ export default {
       return this.project.tags.join(' / ')
     },
     randomProject() {
-      return this.$store.getters.getRandomProject
+      return this.$store.getters.getOtherRandomProject(this.$route.params.slug)
     }
   }
 }
@@ -75,6 +75,8 @@ p {
 
 .suggestions {
   margin-top: 10rem;
+  cursor: pointer;
+  display: inline-block;
 
   img {
     width: 30rem;

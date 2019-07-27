@@ -53,8 +53,13 @@ export const getters = {
       project => project._path.split('/')[2] === slug
     )
   },
-  getRandomProject(state) {
-    const random = Math.floor(Math.random() * state.projectPosts.length)
+  getOtherRandomProject: state => slug => {
+    let random = Math.floor(Math.random() * state.projectPosts.length)
+
+    // Keep finding a new random number until slugs don't match
+    while (state.projectPosts[random]._path.split('/')[2] === slug) {
+      random = Math.floor(Math.random() * state.projectPosts.length)
+    }
 
     return state.projectPosts[random]
   }
