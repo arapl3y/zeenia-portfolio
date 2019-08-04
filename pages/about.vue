@@ -4,7 +4,7 @@
       <p>{{ aboutData.description }}</p>
     </div>
 
-    <img :src="aboutData.thumbnail" class="profile-image">
+    <img v-lazy="aboutData.thumbnail" class="profile-image">
 
     <div class="row h-padded">
       <p>{{ aboutData.industries }}</p>
@@ -28,6 +28,9 @@
 export default {
   name: 'About',
   layout: 'dark',
+  // transition(to, from) {
+  //   return !from ? 'slide-left' : 'slide-right'
+  // },
   computed: {
     aboutData() {
       return this.$store.state.aboutData[0]

@@ -18,7 +18,9 @@
 .container {
   width: 100%;
   margin: 0 auto;
+  transition: all .5s cubic-bezier(.55, 0, .1, 1);
 }
+
 
 .column {
   display: flex;
