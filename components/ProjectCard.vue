@@ -1,6 +1,6 @@
 <template>
   <nuxt-link :to="{ name: 'projects-slug', params: { slug: slug } }" tag="div">
-    <img :src="project.thumbnail" alt="">
+    <img v-lazy="project.thumbnail" alt="">
     <p>{{ project.title }}</p>
     <p>{{ tags }}</p>
   </nuxt-link>
@@ -27,6 +27,7 @@ export default {
 
 <style lang="scss" scoped>
 div {
+  z-index: 3;
   margin-bottom: 8rem;
   cursor: pointer;
 
