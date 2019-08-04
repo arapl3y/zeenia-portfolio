@@ -6,12 +6,12 @@
 
 
 
-    <div class="img-container">
-      <img :src="project.thumbnail">
+    <div class="content-container">
+      <img v-lazy="project.thumbnail">
 
-      <template v-for="(value, index) in project.descriptionTexts.slice(0)">
+      <template v-for="(value, index) in project.descriptionTexts.slice(1)">
         <div :key="index">
-          <img :src="value.descriptionImage" class="description-image">
+          <img v-lazy="value.descriptionImage" class="description-image">
           <p class="description-text">
             {{ value.descriptionText }}
           </p>
@@ -32,6 +32,9 @@
 <script>
 export default {
   name: 'ProjectProfile',
+  transition(to, from) {
+    return !from ? 'slide-left' : 'slide-right'
+  },
   computed: {
     project() {
       return this.$store.getters.getProjectBySlug(this.$route.params.slug)
@@ -50,6 +53,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.container {
+  margin-top: 30rem;
+  position: relative;
+  z-index: 3;
+}
+
 h2 {
   margin-bottom: 10rem;
 }
@@ -59,7 +68,7 @@ p {
   width: 50%;
 }
 
-.img-container {
+.content-container {
   margin-top: 8rem;
   display: flex;
   align-items: center;
@@ -67,23 +76,40 @@ p {
   flex-flow: column nowrap;
 
   p {
-    align-self: flex-end;
-    width: 50%;
+    width: 100%;
     margin-top: 8rem;
   }
 
-  img {
+  & > img {
     margin: 0 auto;
     max-width: 60rem;
   }
 
   div {
-    margin-top: 10rem;
+    display: inline-block;
+    margin: 10rem 0 8rem 0;
+    max-width: 40rem;
+
+    img {
+      max-width: 100%;
+    }
+
+    &:nth-of-type(3n + 1) {
+      align-self: flex-start;
+    }
+
+    &:nth-of-type(3n + 2) {
+      align-self: center;
+    }
+
+    &:nth-of-type(3n + 3) {
+      align-self: flex-end;
+    }
   }
 
-  .description-image {
-    max-width: 30rem;
-  }
+  // .description-image {
+  //   max-width: 30rem;
+  // }
 }
 
 .suggestions {
