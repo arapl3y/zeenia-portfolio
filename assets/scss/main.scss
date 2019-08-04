@@ -1,8 +1,9 @@
-@import "_fonts.scss";
-@import "_layout.scss";
+@import "fonts.scss";
 @import "reset.scss";
 @import "normalize.scss";
 @import "typography.scss";
+@import "animation.scss";
+@import "layout.scss";
 
 html {
   font-family: "BasisGrotesque", "Roboto", "Noto", sans-serif;
@@ -20,4 +21,11 @@ html {
 
 .link {
   cursor: pointer;
+}
+
+
+// vue-lazyload plugin fade in
+img[lazy='loaded'] {
+  opacity: 0;
+  animation: fadeIn .5s 1 forwards normal ease-out;
 }
