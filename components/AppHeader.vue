@@ -53,9 +53,12 @@ export default {
 
 <style lang="scss" scoped>
 header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  z-index: 1;
 
   &.dark {
+    position: relative;
     background-color: $black;
     color: #fff;
     margin: 0;
