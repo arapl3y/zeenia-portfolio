@@ -59,7 +59,6 @@ header {
 
   &.dark {
     position: relative;
-    background-color: $black;
     color: #fff;
     margin: 0;
     align-items: center;
