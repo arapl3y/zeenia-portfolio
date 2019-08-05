@@ -31,6 +31,12 @@ collections:
           widget: 'list',
           required: false
         }
+      - {
+          label: 'Introduction Description',
+          name: 'intro',
+          widget: 'markdown',
+          required: false
+        }
       - label: 'Description'
         name: 'descriptionTexts'
         widget: 'list'

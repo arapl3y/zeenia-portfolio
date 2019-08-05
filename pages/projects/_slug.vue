@@ -9,7 +9,7 @@
     <div class="content-container">
       <img v-lazy="project.thumbnail">
 
-      <template v-for="(value, index) in project.descriptionTexts.slice(1)">
+      <template v-for="(value, index) in project.descriptionTexts">
         <div :key="index">
           <img v-lazy="value.descriptionImage" class="description-image">
           <p class="description-text">
