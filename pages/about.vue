@@ -28,9 +28,6 @@
 export default {
   name: 'About',
   layout: 'dark',
-  // transition(to, from) {
-  //   return !from ? 'slide-left' : 'slide-right'
-  // },
   computed: {
     aboutData() {
       return this.$store.state.aboutData[0]
@@ -46,7 +43,7 @@ export default {
   justify-content: center;
   align-items: center;
   padding-bottom: 4rem;
-  max-width: 50em;
+  max-width: 60em;
 
   & .row:nth-of-type(odd) {
     justify-content: flex-start;
@@ -68,12 +65,13 @@ export default {
     font-size: 1.75rem;
     margin: 0;
     z-index: 1;
+    mix-blend-mode: difference;
   }
 }
 
 .profile-image {
   position: fixed;
-  max-width: 25rem;
+  max-width: 30rem;
   top: 15rem;
   z-index: 0;
 }
