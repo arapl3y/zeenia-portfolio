@@ -2,7 +2,7 @@
   <div class="container h-padded">
     <h2>{{ project.title }}</h2>
     <p> {{ tags }}</p>
-    <p>{{ project.descriptionTexts[0].descriptionText }}</p>
+    <p v-html="project.intro" />
 
 
 
