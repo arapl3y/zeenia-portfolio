@@ -1,15 +1,15 @@
 {
-  "title": "university of technology, sydney",
+  "title": "uts: bachelor degrees",
   "date": "4th Aug 2019",
   "thumbnail": "/images/uploads/mockup_plain_19-bachdegree.png",
   "tags": [
     "degree redesign concept"
   ],
-  "intro": "degree redesign concept\n\nthis was a fun project to do blah blah blah",
+  "intro": "<br>\n\nthis was a fun project to do blah blah blah",
   "descriptionTexts": [
     {
       "descriptionText": "second paragraph, hey it's me alex hehee :D",
-      "descriptionImage": "/images/uploads/mockup_plain_19-bachdegree.png"
+      "descriptionImage": "/images/uploads/degree-mockup.png"
     }
   ]
 }
