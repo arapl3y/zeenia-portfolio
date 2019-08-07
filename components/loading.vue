@@ -9,6 +9,7 @@ export default {
   data: () => ({
     loading: false
   }),
+  transition: 'fade',
   methods: {
     start() {
       this.loading = true
