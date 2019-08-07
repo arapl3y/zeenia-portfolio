@@ -1,5 +1,5 @@
 <template>
-  <div class="container h-padded">
+  <div v-if="project" class="container h-padded">
     <h2 v-html="project.title" />
     <p> {{ tags }}</p>
     <p v-html="project.intro" />

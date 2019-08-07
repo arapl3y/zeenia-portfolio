@@ -19,12 +19,22 @@ export const actions = {
       /\.json$/
     )
 
-    const searchposts = await context.keys().map(key => ({
-      ...context(key),
-      _path: `/projects/${key.replace('.json', '').replace('./', '')}`
-    }))
+    const posts = await context
+      .keys()
+      .map(key => ({
+        ...context(key),
+        _path: `/projects/${key.replace('.json', '').replace('./', '')}`
+      }))
+      // TODO: Refactor this
+      .sort((a, b) => {
+        if (a.order && b.order) {
+          return a.order - b.order
+        } else {
+          return a.title.localeCompare(b.title)
+        }
+      })
 
-    commit('SET_PROJECTS', searchposts.reverse())
+    commit('SET_PROJECTS', posts)
   },
   async getAboutData({ state, commit }) {
     const context = await require.context('~/content/about/', false, /\.json$/)
@@ -39,8 +49,8 @@ export const actions = {
 }
 
 export const mutations = {
-  SET_PROJECTS(state, data) {
-    state.projectPosts = data
+  SET_PROJECTS(state, posts) {
+    state.projectPosts = posts
   },
   SET_ABOUT(state, data) {
     state.aboutData = data
@@ -48,6 +58,9 @@ export const mutations = {
 }
 
 export const getters = {
+  getProjects(state) {
+    return state.projectPosts
+  },
   getProjectBySlug: state => slug => {
     return state.projectPosts.find(
       project => project._path.split('/')[2] === slug

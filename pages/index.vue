@@ -22,7 +22,7 @@ export default {
   },
   computed: {
     projectPosts() {
-      return this.$store.state.projectPosts
+      return this.$store.getters.getProjects
     }
   }
 }
