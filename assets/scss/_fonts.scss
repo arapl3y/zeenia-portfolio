@@ -1,20 +1,23 @@
-@font-face {
-  font-family: "BasisGrotesque";
-  src: url("/fonts/BasisGrotesquePro-Regular.ttf") format("ttf");
-  font-weight: normal;
-  font-style: normal;
-}
 
 @font-face {
-  font-family: "BasisGrotesque-Light";
-  src: url("/fonts/BasisGrotesquePro-Light.ttf") format("ttf");
+  font-family:"Basis Grotesque Pro";
+  src:url("/fonts/BasisGrotesquePro-Light.woff2") format("woff2");
+  font-style: normal;
   font-weight: 300;
-  font-style: normal;
 }
 
+
 @font-face {
-  font-family: "BasisGrotesque-Bold";
-  src: url("/fonts/BasisGrotesquePro-Bold.ttf") format("ttf");
-  font-weight: bold;
+  font-family:"Basis Grotesque Pro";
+  src:url("/fonts/BasisGrotesquePro-Regular.woff2") format("woff2");
   font-style: normal;
+  font-weight: 500;
+}
+
+
+font-face {
+  font-family:"Basis Grotesque Pro";
+  src:url("/fonts/BasisGrotesquePro-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 800;
 }

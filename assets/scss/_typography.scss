@@ -1,6 +1,6 @@
 h1 {
-  font-size: 10rem;
   font-weight: 300;
+  font-size: 10rem;
   color: $black;
 
   @media (min-width: $mid) {
@@ -18,7 +18,6 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  font-weight: 500;
   color: $black;
 
   @media (min-width: $mega) {
@@ -27,5 +26,5 @@ h2 {
 }
 
 p {
-  font-weight: 300;
+  font-weight: 500;
 }
