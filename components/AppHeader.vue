@@ -1,21 +1,5 @@
 <template>
-  <header :class="{ dark: isDark }" class="column h-padded container">
-    <nuxt-link :to="{ path: '/' }" tag="div" class="logo">
-      <template v-if="!isDark">
-        <h1 class="horizontal">
-          zeenia
-        </h1>
-
-        <h1 class="horizontal">
-          kaur
-        </h1>
-      </template>
-
-      <template v-else>
-        <img src="/images/zk-logo.svg" class="logo">
-      </template>
-    </nuxt-link>
-
+  <header :class="{ dark: isDark }" class="h-padded container">
     <div class="nav">
       <nuxt-link v-if="!isDark" :to="{ path: '/about'}" tag="span" class="link">
         about me
@@ -23,6 +7,25 @@
 
       <nuxt-link v-else :to="{ path: '/'}" tag="span" class="link">
         close
+      </nuxt-link>
+    </div>
+
+    <div>
+      <nuxt-link :to="{ path: '/' }" tag="div" class="logo">
+        <template v-if="!isDark">
+          <h1 class="horizontal">
+            zeenia
+          </h1>
+
+          <h1 class="horizontal">
+            kaur
+          </h1>
+        </template>
+
+
+        <template v-else>
+          <img src="/images/zk-logo.svg" class="logo">
+        </template>
       </nuxt-link>
     </div>
   </header>
@@ -58,16 +61,11 @@ header {
   z-index: 1;
 
   &.dark {
-    position: relative;
     color: #fff;
     margin: 0;
     align-items: center;
     justify-content: center;
     display: flex;
-
-    div {
-      margin-top: 2rem;
-    }
 
     .logo {
       max-width: 10rem;
@@ -77,12 +75,13 @@ header {
 
 .logo {
   cursor: pointer;
+  margin-top: 1.5rem;
 }
 
 .nav {
   position: absolute;
   right: 1rem;
-  top: 25%;
+  top: 6rem;
 }
 
 h1 {
