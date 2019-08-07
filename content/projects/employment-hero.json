@@ -1,0 +1,17 @@
+{
+  "title": "employment hero",
+  "date": "7th Aug 2019",
+  "thumbnail": "/images/uploads/eh-mobile.png",
+  "tags": [
+    "web & mobile app design"
+  ],
+  "intro": "<br>\n\n<p> Employment Hero (EH) is an Australian start-up disrupting the HR industry by providing an all-in-one Cloud based HR, Payroll and Benefits platform. I’ve worked at Employment Hero for over 2 years and I’ve seen it go from strength to strength, growing exponentially. </p>\n\n<p>Over time the EH web product accumulated a great deal of technical and design debt. The user experience and interface design became fragmented and inconsistent. In early 2017, I was given the opportunity to lead the re-design and improvement of the web platform for its ever growing user base. Due to limited capacities and resources, I worked a small team consisting of myself and two developers to take on this project from start to finish. I also launched the design & build of the brand new iOS & Android native mobile apps, which are both available to download</p>",
+  "descriptionTexts": [
+    {
+      "descriptionText": "The complexity and scale of this project meant it required direction. Before jumping into any designs, I collaborated with the team to create a set of goals for the project. These span from creating a consistent, clear and simple user experience for all customers to reducing work effort for the Support team. \n\n<br>\n\nTo prioritise tasks we synthesised customer feedback from numerous channels to create a simple, consistent experience, but also reduce key customer pain-points by improving and innovating existing functionality. I conducted heavy user research to define the best possible solution to each issue with the system before creating lo-fi sketches to map out all user workflows."
+    },
+    {
+      "descriptionText": "This project is on-going and is currently in the process of improving the Dashboard experience for all user roles along with creating a fresh new brand for Employment Hero accompanied by a robust design system."
+    }
+  ]
+}
