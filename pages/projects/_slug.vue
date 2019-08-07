@@ -1,6 +1,6 @@
 <template>
   <div class="container h-padded">
-    <h2>{{ project.title }}</h2>
+    <h2 v-html="project.title" />
     <p> {{ tags }}</p>
     <p v-html="project.intro" />
 
@@ -12,9 +12,7 @@
       <template v-for="(value, index) in project.descriptionTexts">
         <div :key="index">
           <img v-lazy="value.descriptionImage" class="description-image">
-          <p class="description-text">
-            {{ value.descriptionText }}
-          </p>
+          <p v-html="value.descriptionText" class="description-text" />
         </div>
       </template>
     </div>
@@ -23,8 +21,8 @@
     <nuxt-link :to="{ name: 'projects-slug', params: { slug: randomProjectSlug } }" class="suggestions" tag="div">
       <p>Something else to check out</p>
 
-      <img :src="randomProject.thumbnail">
-      <p>{{ randomProject.title }}</p>
+      <img v-lazy="randomProject.thumbnail">
+      <p v-html="randomProject.title" />
     </nuxt-link>
   </div>
 </template>
@@ -55,8 +53,6 @@ export default {
 <style lang="scss" scoped>
 .container {
   margin-top: 30rem;
-  position: relative;
-  z-index: 3;
 }
 
 h2 {
@@ -83,6 +79,8 @@ p {
   & > img {
     margin: 0 auto;
     max-width: 60rem;
+    position: relative;
+    z-index: 3;
   }
 
   div {
@@ -92,6 +90,8 @@ p {
 
     img {
       max-width: 100%;
+      position: relative;
+      z-index: 3;
     }
 
     &:nth-of-type(3n + 1) {
@@ -119,6 +119,13 @@ p {
 
   img {
     width: 30rem;
+    transition: all 0.8s cubic-bezier(0.55, 0, 0.1, 1);
+
+    &:hover {
+      transform: scale(1.01) translateZ(0);
+      box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
+      backface-visibility: hidden;
+    }
   }
 }
 </style>
