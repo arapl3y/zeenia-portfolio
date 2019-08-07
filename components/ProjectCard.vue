@@ -31,6 +31,20 @@ div {
   margin-bottom: 8rem;
   cursor: pointer;
 
+  p {
+    margin: 0.5rem 0;
+  }
+
+  img {
+    transition: all 0.8s cubic-bezier(0.55, 0, 0.1, 1);
+
+    &:hover {
+      transform: scale(1.01) translateZ(0);
+      box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
+      backface-visibility: hidden;
+    }
+  }
+
   &:nth-of-type(3n + 1) {
     align-self: flex-start;
     img {
