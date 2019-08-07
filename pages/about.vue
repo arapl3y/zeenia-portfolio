@@ -1,25 +1,25 @@
 <template>
   <div class="about container">
     <div class="row h-padded">
-      <p>{{ aboutData.description }}</p>
+      <p v-html="aboutData.description" />
     </div>
 
     <img v-lazy="aboutData.thumbnail" class="profile-image">
 
     <div class="row h-padded">
-      <p>{{ aboutData.industries }}</p>
+      <p v-html="aboutData.industries" />
     </div>
 
     <div class="row h-padded">
-      <p>{{ aboutData.experience }}</p>
+      <p v-html="aboutData.experience" />
     </div>
 
     <div class="row h-padded">
-      <p>{{ aboutData.hobbies }}</p>
+      <p v-html="aboutData.hobbies" />
     </div>
 
     <div class="row h-padded">
-      <p>{{ aboutData.social }}</p>
+      <p v-html="aboutData.social" />
     </div>
   </div>
 </template>
@@ -44,6 +44,10 @@ export default {
   align-items: center;
   padding-bottom: 4rem;
   max-width: 60em;
+
+  & > div:first-child {
+    margin-top: 15rem;
+  }
 
   & .row:nth-of-type(odd) {
     justify-content: flex-start;
