@@ -12,6 +12,7 @@ collections:
     slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
     format: 'json'
     fields: # The fields for each document, usually in front matter
+      - { label: 'Order', name: 'order', widget: 'number', required: false }
       - { label: 'Title', name: 'title', widget: 'string' }
       - {
           label: 'Publish Date',
