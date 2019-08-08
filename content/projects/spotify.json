@@ -1,8 +1,19 @@
 {
   "title": "spotify",
   "date": "8th Aug 2019",
+  "thumbnail": "/images/uploads/insta-post-2.1.png",
   "tags": [
     "playlist art design"
   ],
-  "intro": "aha"
+  "intro": "aha",
+  "descriptionTexts": [
+    {
+      "descriptionText": "wip",
+      "descriptionImage": "/images/uploads/insta-post-2.gif"
+    },
+    {
+      "descriptionText": "wip",
+      "descriptionImage": "/images/uploads/spotify-mockup.png"
+    }
+  ]
 }
