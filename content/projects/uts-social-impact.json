@@ -1,10 +1,16 @@
 {
-  "order": 5,
+  "order": 4,
   "title": "uts: social impact",
   "date": "8th Aug 2019",
   "thumbnail": "/images/uploads/uts-social-impact.png",
   "tags": [
     "website design"
   ],
-  "intro": "<br>\n\n<p>WIP</p>"
+  "intro": "<br>\n\n<p>WIP</p>",
+  "descriptionTexts": [
+    {
+      "descriptionText": "<br>",
+      "descriptionImage": "/images/uploads/uts-si-animation.gif"
+    }
+  ]
 }
