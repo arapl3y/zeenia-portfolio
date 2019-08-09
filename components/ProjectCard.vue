@@ -47,8 +47,21 @@ div {
 
   &:nth-of-type(3n + 1) {
     align-self: flex-start;
+
     img {
-      max-width: 40rem;
+      max-width: 100%;
+
+      @media (min-width: $small) {
+        max-width: 20rem;
+      }
+
+      @media (min-width: $mid) {
+        max-width: 30rem;
+      }
+
+      @media (min-width: $big) {
+        max-width: 40rem;
+      }
     }
   }
 
@@ -56,7 +69,19 @@ div {
     align-self: center;
 
     img {
-      max-width: 30rem;
+      max-width: 100%;
+
+      @media (min-width: $small) {
+        max-width: 10rem;
+      }
+
+      @media (min-width: $mid) {
+        max-width: 20rem;
+      }
+
+      @media (min-width: $big) {
+        max-width: 30rem;
+      }
     }
   }
 
@@ -64,7 +89,19 @@ div {
     align-self: flex-end;
 
     img {
-      max-width: 30rem;
+      max-width: 100%;
+
+      @media (min-width: $small) {
+        max-width: 10rem;
+      }
+
+      @media (min-width: $mid) {
+        max-width: 20rem;
+      }
+
+      @media (min-width: $big) {
+        max-width: 30rem;
+      }
     }
   }
 }

@@ -1,10 +1,10 @@
 <template>
   <div class="about container">
+    <img v-lazy="aboutData.thumbnail" class="profile-image h-padded">
+
     <div class="row h-padded">
       <p v-html="aboutData.description" />
     </div>
-
-    <img v-lazy="aboutData.thumbnail" class="profile-image">
 
     <div class="row h-padded">
       <p v-html="aboutData.industries" />
@@ -45,16 +45,26 @@ export default {
   padding-bottom: 4rem;
   max-width: 60em;
 
-  & > div:first-child {
-    margin-top: 15rem;
+  & > div:nth-child(2) {
+    @media (min-width: $mid) {
+      margin-top: 15rem;
+    }
   }
 
-  & .row:nth-of-type(odd) {
+  &.row {
     justify-content: flex-start;
   }
 
+  & .row:nth-of-type(odd) {
+    @media (min-width: $mid) {
+      justify-content: flex-start;
+    }
+  }
+
   & .row:nth-of-type(even) {
-    justify-content: flex-end;
+    @media (min-width: $mid) {
+      justify-content: flex-end;
+    }
   }
 }
 
@@ -65,18 +75,27 @@ export default {
   align-items: center;
 
   p {
-    max-width: 20rem;
+    width: 100%;
     font-size: 1.75rem;
     margin: 0;
     z-index: 1;
     mix-blend-mode: difference;
+
+    @media (min-width: $mid) {
+      max-width: 20rem;
+    }
   }
 }
 
 .profile-image {
-  position: fixed;
-  max-width: 30rem;
-  top: 15rem;
-  z-index: 0;
+  width: 100%;
+  margin-top: 5rem;
+
+  @media (min-width: $mid) {
+    position: fixed;
+    z-index: 0;
+    max-width: 30rem;
+    top: 15rem;
+  }
 }
 </style>

@@ -52,16 +52,28 @@ export default {
 
 <style lang="scss" scoped>
 .container {
-  margin-top: 30rem;
+  margin-top: 15rem;
+
+  @media (min-width: $mid) {
+    margin-top: 30rem;
+  }
 }
 
 h2 {
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
+
+  @media (min-width: $mid) {
+    margin-bottom: 10rem;
+  }
 }
 
 p {
   align-self: flex-start;
-  width: 50%;
+  width: 100%;
+
+  @media (min-width: $mid) {
+    width: 50%;
+  }
 }
 
 .content-container {
@@ -77,15 +89,19 @@ p {
   }
 
   & > img {
+    width: 100%;
     margin: 0 auto;
-    max-width: 60rem;
     position: relative;
     z-index: 3;
+
+    @media (min-width: $mid) {
+      max-width: 60rem;
+    }
   }
 
   div {
     display: inline-block;
-    margin: 10rem 0 8rem 0;
+    margin: 5rem 0 4rem 0;
     max-width: 40rem;
 
     img {
@@ -105,11 +121,11 @@ p {
     &:nth-of-type(3n + 3) {
       align-self: flex-end;
     }
-  }
 
-  // .description-image {
-  //   max-width: 30rem;
-  // }
+    @media (min-width: $mid) {
+      margin: 10rem 0 8rem 0;
+    }
+  }
 }
 
 .suggestions {
@@ -118,13 +134,17 @@ p {
   display: inline-block;
 
   img {
-    width: 30rem;
+    width: 100%;
     transition: all 0.8s cubic-bezier(0.55, 0, 0.1, 1);
 
     &:hover {
       transform: scale(1.01) translateZ(0);
       box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
       backface-visibility: hidden;
+    }
+
+    @media (min-width: $mid) {
+      width: 30rem;
     }
   }
 }

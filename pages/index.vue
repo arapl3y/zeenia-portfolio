@@ -28,8 +28,12 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .container {
-  margin-top: 30rem;
+  margin-top: 18rem;
+
+  @media (min-width: $mid) {
+    margin-top: 30rem;
+  }
 }
 </style>
