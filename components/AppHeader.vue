@@ -1,14 +1,14 @@
 <template>
   <header :class="{ dark: isDark }" class="h-padded container">
-    <div class="nav">
-      <nuxt-link v-if="!isDark" :to="{ path: '/about'}" tag="span" class="link">
+    <nav class="nav">
+      <nuxt-link :class="{ show : !isDark}" :to="{ path: '/about'}" tag="span" class="link">
         about me
       </nuxt-link>
 
-      <nuxt-link v-else :to="{ path: '/'}" tag="span" class="link">
+      <nuxt-link :class="{ show : isDark}" :to="{ path: '/'}" tag="span" class="link">
         close
       </nuxt-link>
-    </div>
+    </nav>
 
     <div>
       <nuxt-link :to="{ path: '/' }" tag="div" class="logo">
@@ -61,6 +61,7 @@ header {
   z-index: 1;
 
   &.dark {
+    position: static;
     color: #fff;
     margin: 0;
     align-items: center;
@@ -70,22 +71,51 @@ header {
     .logo {
       max-width: 10rem;
     }
+
+    @media (min-width: $mid) {
+      position: fixed;
+    }
   }
 }
 
 .logo {
   cursor: pointer;
-  margin-top: 1.5rem;
+
+  @media (min-width: $mid) {
+    margin-top: 0.75rem;
+  }
 }
 
 .nav {
   position: absolute;
-  right: 1rem;
-  top: 6rem;
+  right: 0;
+  top: 2.5rem;
+
+  span {
+    position: absolute;
+    right: 0.5rem;
+    opacity: 0;
+    z-index: 0;
+    transition: opacity 0.3s ease-in-out;
+    width: 5rem;
+    text-align: right;
+
+    @media (min-width: $mid) {
+      right: 1rem;
+      top: 1.5rem;
+    }
+
+    &.show {
+      opacity: 1;
+      z-index: 1;
+      width: 5rem;
+    }
+  }
 }
 
 h1 {
   margin: 0;
+  line-height: 0.8;
 
   .menu {
     font-size: 1rem;
