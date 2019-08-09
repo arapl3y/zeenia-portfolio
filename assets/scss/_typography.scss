@@ -1,18 +1,21 @@
 h1 {
-  font-weight: 300;
-  font-size: 10rem;
+  font-weight: 500;
+  font-size: 5.25rem;
   color: $black;
 
   @media (min-width: $mid) {
     font-size: 12rem;
+    font-weight: 300;
   }
 
   @media (min-width: $big) {
     font-size: 14rem;
+    font-weight: 300;
   }
 
   @media (min-width: $mega) {
     font-size: 16rem;
+    font-weight: 300;
   }
 }
 
