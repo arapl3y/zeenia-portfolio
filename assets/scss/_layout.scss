@@ -1,7 +1,7 @@
 // SPACING
 .h-padded {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   margin: 0 auto;
 
   @media (min-width: $small) {
@@ -18,7 +18,8 @@
 .container {
   width: 100%;
   margin: 0 auto;
-  transition: all .5s cubic-bezier(.55, 0, .1, 1);
+  // transition: all .5s cubic-bezier(.55, 0, .1, 1);
+  transition: all .3s ease-in-out;
 }
 
 
