@@ -1,7 +1,7 @@
 <template>
   <div v-if="project" class="container h-padded">
     <h2 v-html="project.title" />
-    <p> {{ tags }}</p>
+    <p>{{ tags }}</p>
     <p v-html="project.intro" />
 
 
@@ -23,6 +23,7 @@
 
       <img v-lazy="randomProject.thumbnail">
       <p v-html="randomProject.title" />
+      <p>{{ tags }}</p>
     </nuxt-link>
   </div>
 </template>
@@ -132,6 +133,14 @@ p {
   cursor: pointer;
   display: inline-block;
 
+  p {
+    width: 100%;
+
+    &:first-of-type {
+      margin-bottom: 5rem;
+    }
+  }
+
   img {
     width: 100%;
     transition: all 0.8s cubic-bezier(0.55, 0, 0.1, 1);
@@ -143,7 +152,7 @@ p {
     }
 
     @media (min-width: $mid) {
-      width: 30rem;
+      width: 40rem;
     }
   }
 }

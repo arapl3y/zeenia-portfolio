@@ -84,6 +84,11 @@ export default {
     @media (min-width: $mid) {
       max-width: 20rem;
     }
+
+    @media (min-width: $mega) {
+      max-width: 20rem;
+      font-size: 2rem;
+    }
   }
 }
 
@@ -96,6 +101,10 @@ export default {
     z-index: 0;
     max-width: 30rem;
     top: 15rem;
+  }
+
+  @media (min-width: $mega) {
+    max-width: 40rem;
   }
 }
 </style>
