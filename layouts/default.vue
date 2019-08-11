@@ -11,6 +11,13 @@ import AppHeader from '@/components/AppHeader.vue'
 export default {
   components: {
     AppHeader
+  },
+  mounted() {
+    this.$nextTick(() => {
+      this.$nuxt.$loading.start()
+
+      setTimeout(() => this.$nuxt.$loading.finish(), 1000)
+    })
   }
 }
 </script>
