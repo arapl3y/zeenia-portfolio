@@ -14,7 +14,7 @@ h1 {
   }
 
   @media (min-width: $mega) {
-    font-size: 16rem;
+    font-size: 20rem;
     font-weight: 300;
   }
 }
@@ -24,10 +24,14 @@ h2 {
   color: $black;
 
   @media (min-width: $mega) {
-    font-size: 3.75rem;
+    font-size: 5rem;
   }
 }
 
 p {
   font-weight: 500;
+
+  @media (min-width: $mega) {
+    font-size: 1.5rem;
+  }
 }
