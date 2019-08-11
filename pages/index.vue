@@ -13,17 +13,13 @@ export default {
   components: {
     ProjectCard
   },
-  transition(to, from) {
-    if (from && from.name === 'about') {
-      return
-    }
-
-    return !from ? 'slide-right' : 'slide-left'
-  },
   computed: {
     projectPosts() {
       return this.$store.getters.getProjects
     }
+  },
+  transition(to, from) {
+    return !from ? 'slide-right' : 'slide-left'
   }
 }
 </script>
