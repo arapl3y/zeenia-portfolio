@@ -9,7 +9,8 @@
   "intro": "<br>\n\n<p>Coffee runs from Mentally Friendly's local haunt (Bean Haus in Redfern) is a mandatory daily ritual. When clients arrive in the double digits for workshops, keeping track of coffee orders can be pretty exhausting.</p>\n\n<p>A slow day in the office had me conceptualising an app idea called 'Fix' - designed to take orders: large or small, niche or simple. </p>",
   "descriptionTexts": [
     {
-      "descriptionText": "The idea's simple: a MF-er places an order for \\[x] number of people in an area / room in the office. Each beverage is added to the cart - tailored to fit even the most exclusive of orders. This order is sent straight to our local coffee place of choice. Caffeine fix without the hassle."
+      "descriptionText": "The idea's simple: a MF-er places an order for \\[x] number of people in an area / room in the office. Each beverage is added to the cart - tailored to fit even the most exclusive of orders. This order is sent straight to our local coffee place of choice. Caffeine fix without the hassle.",
+      "descriptionImage": "/images/uploads/fix-insta2.png"
     }
   ]
 }
