@@ -7,7 +7,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title: 'zeenia kaur',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -19,7 +19,7 @@ module.exports = {
   /*
   ** Customize the progress-bar color
   */
-  loading: '~/components/loading.vue',
+  loading: '~/components/Loading.vue',
 
   /*
   ** Global CSS
