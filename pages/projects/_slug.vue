@@ -93,6 +93,7 @@ p {
     margin: 0 auto;
     position: relative;
     z-index: 3;
+    width: 100%;
 
     @media (min-width: $mid) {
       max-width: 60rem;
