@@ -12,8 +12,8 @@ export default {
   components: {
     AppHeader
   },
-  mounted() {
-    this.$nextTick(() => {
+  async mounted() {
+    await this.$nextTick(() => {
       this.$nuxt.$loading.start()
 
       setTimeout(() => this.$nuxt.$loading.finish(), 1000)
