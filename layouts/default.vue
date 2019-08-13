@@ -1,23 +1,28 @@
 <template>
   <div class="root">
-    <app-header />
-    <nuxt />
+    <div v-if="!loading">
+      <app-header />
+      <nuxt />
+    </div>
+
+    <loading :loading="loading" />
   </div>
 </template>
 
 <script>
 import AppHeader from '@/components/AppHeader.vue'
+import Loading from '@/components/Loading.vue'
 
 export default {
   components: {
-    AppHeader
+    AppHeader,
+    Loading
   },
-  async mounted() {
-    await this.$nextTick(() => {
-      this.$nuxt.$loading.start()
-
-      setTimeout(() => this.$nuxt.$loading.finish(), 1000)
-    })
+  data: () => ({
+    loading: true
+  }),
+  mounted() {
+    setTimeout(() => (this.loading = false), 1000)
   }
 }
 </script>

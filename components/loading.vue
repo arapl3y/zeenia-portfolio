@@ -6,18 +6,14 @@
 
 <script>
 export default {
-  data: () => ({
-    loading: false
-  }),
-  transition: 'fade',
-  methods: {
-    start() {
-      this.loading = true
-    },
-    finish() {
-      this.loading = false
+  name: 'Loading',
+  props: {
+    loading: {
+      type: Boolean,
+      default: true
     }
-  }
+  },
+  transition: 'fade'
 }
 </script>
 
