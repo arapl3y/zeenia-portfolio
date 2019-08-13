@@ -11,7 +11,7 @@
 
 <script>
 import AppHeader from '@/components/AppHeader.vue'
-import Loading from '@/components/Loading.vue'
+import Loading from '@/components/loading.vue'
 
 export default {
   components: {
