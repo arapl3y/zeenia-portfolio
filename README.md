@@ -1,6 +1,6 @@
-# zeenia-portfolio
+# Design portfolio for Zeenia Kaur
 
-> My splendiferous Nuxt.js project
+This project was designed by [Zeenia Kaur](https://www.linkedin.com/in/zeenia-kaur/) and built using [Nuxt.js](https://nuxtjs.org/) and [NetlifyCMS](https://www.netlifycms.org).
 
 ## Build Setup
 
@@ -18,5 +18,3 @@ $ npm start
 # generate static project
 $ npm run generate
 ```
-
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
