@@ -6,11 +6,15 @@
   "tags": [
     "website design"
   ],
-  "intro": "<br>\n\n<p>WIP</p>",
+  "intro": "<br>\n\n<p>University of Technology Sydney (UTS) has a responsibility, as a public institution, to contribute to the community and drive social change in the world. As such, the university has become a pioneer in the social impact space and has over 390 social justice initiatives run by its staff and students.</p>\n\n<p>Currently the UTS Social Impact team has been conducting internal research to identify and track these 390+ initiatives via an Excel spreadsheet. Considering the global scale at which UTS wants to operate in the social justice space, this medium of managing initiatives isn't scalable, nor publicised.</p>",
   "descriptionTexts": [
     {
-      "descriptionText": "<br>",
+      "descriptionText": "<p>The team at Mentally Friendly, including myself, was approached by UTS to create a solution that socialised the data held in the spreadsheet, and spread awareness of the initiatives across UTS and beyond. </p>\n\n<p>We spent 3 weeks prototyping and testing a website that allowed the initiatives to be visible by internal UTS departments, staff, and students (with the intention to scale to the general public). This meant that anyone was able to read about the programs, their impact, and how to get involved - fostering collaboration and positioning UTS as a global agent for social change.<p>",
       "descriptionImage": "/images/uploads/uts-si-animation.gif"
+    },
+    {
+      "descriptionText": "<p>From user testing with UTS Staff and Students, we learnt the value and desirability of the product, understood user needs, and validated the website's intention to broaden the horizons of social impact at UTS and incite a proactive response to finding and supporting initiatives.</p>\n\n<p>We also helped build a strategy for the Social Impact team to scale the product in the future by creating a 3 Horizons Roadmap, User Segments to design for, and Design Principles to aide the design process.</p>\n\n<p>Overall, the project was incredibly enjoyable, successful and meaningful.</p>",
+      "descriptionImage": "/images/uploads/uts-social-impact-slides.png"
     }
   ]
 }
