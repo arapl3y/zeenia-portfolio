@@ -1,6 +1,6 @@
 <template>
   <div class="about container">
-    <img v-lazy="aboutData.thumbnail" class="profile-image h-padded">
+    <ImageItem :source="aboutData.thumbnail" class="profile-image h-padded" />
 
     <div class="row h-padded">
       <p v-html="aboutData.description" />
@@ -25,8 +25,13 @@
 </template>
 
 <script>
+import ImageItem from '@/components/ImageItem.vue'
+
 export default {
   name: 'About',
+  components: {
+    ImageItem
+  },
   layout: 'dark',
   computed: {
     aboutData() {

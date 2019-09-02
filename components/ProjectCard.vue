@@ -1,13 +1,19 @@
 <template>
-  <nuxt-link :to="{ name: 'projects-slug', params: { slug: slug } }" tag="div">
-    <img v-lazy="project.thumbnail" alt="">
+  <nuxt-link :to="{ name: 'projects-slug', params: { slug: slug } }" class="project-container" tag="div">
+    <ImageItem :source="project.thumbnail" class="project-image" />
+
     <p>{{ project.title }}</p>
     <p>{{ tags }}</p>
   </nuxt-link>
 </template>
 
 <script>
+import ImageItem from '@/components/ImageItem.vue'
+
 export default {
+  components: {
+    ImageItem
+  },
   props: {
     project: {
       type: Object,
@@ -26,7 +32,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-div {
+.project-container {
   z-index: 3;
   margin-bottom: 8rem;
   cursor: pointer;
@@ -35,7 +41,7 @@ div {
     margin: 0.5rem 0;
   }
 
-  img {
+  .project-image {
     transition: all 0.8s cubic-bezier(0.55, 0, 0.1, 1);
 
     &:hover {
@@ -48,7 +54,7 @@ div {
   &:nth-of-type(3n + 1) {
     align-self: flex-start;
 
-    img {
+    figure {
       max-width: 100%;
 
       @media (min-width: $small) {
@@ -68,7 +74,7 @@ div {
   &:nth-of-type(3n + 2) {
     align-self: center;
 
-    img {
+    figure {
       max-width: 100%;
 
       @media (min-width: $small) {
@@ -88,7 +94,7 @@ div {
   &:nth-of-type(3n + 3) {
     align-self: flex-end;
 
-    img {
+    figure {
       max-width: 100%;
 
       @media (min-width: $small) {
