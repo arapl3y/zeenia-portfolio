@@ -6,7 +6,7 @@
   "tags": [
     "Service NSW: Web App"
   ],
-  "intro": "<p>\n\n \n\n<p>\n\nService NSW (SNSW) makes it easier for NSW residents and businesses to access government information and services.\n\n<p>\n\nAs part of their Cost of Living initiative, the team at Mentally Friendly designed and launched a service that would empower NSW citizens to find the right energy plan for their needs.\n\n<p>\n\nenergyswitch.service.nsw.gov.au",
+  "intro": "<p>\n\n \n\n<p>\n\nService NSW (SNSW) makes it easier for NSW residents and businesses to access government information and services.\n\n<p>\n\nAs part of their Cost of Living initiative, the team at Mentally Friendly designed and launched a service that would empower NSW citizens to find the right energy plan for their needs.\n\n<p>\n\n<u>energyswitch.service.nsw.gov.au</u>",
   "descriptionTexts": [
     {
       "descriptionText": "<br>\n\n<h2>The challenge</h2>\n\n<p>\n\nAround 70% of people are paying more than they need for their energy. This happens for a number of reasons including a lack of engagement with utilities, high levels of friction involved in the switching process, and general distrust in energy providers and comparison sites.\n\n<p>\n\nAs a result, many people unknowingly stay with overpriced legacy plans, when they could be saving by switching to a newer plan.",
@@ -17,13 +17,13 @@
       "descriptionImage": "/images/uploads/energy-switch-2.png"
     },
     {
-      "descriptionText": "### <h2>Building trust through transparency </h2>\n\n<p>\n\nWhile trust in Service NSW is high, we discovered through testing that customers think about their electricity providers in the same way that they think about telcos and banks. For example, many believed that they would be charged exit fees upon switching, which isn’t the case.\n\n<p>\n\nThere was an opportunity to increase trust and confidence by demystifying energy plans and educating customers about their consumer rights when switching."
+      "descriptionText": "<h2>Building trust through transparency </h2>\n\n<p>\n\nWhile trust in Service NSW is high, we discovered through testing that customers think about their electricity providers in the same way that they think about telcos and banks. For example, many believed that they would be charged exit fees upon switching, which isn’t the case.\n\n<p>\n\nThere was an opportunity to increase trust and confidence by demystifying energy plans and educating customers about their consumer rights when switching."
     },
     {
       "descriptionText": "<h2> The outcome </h2>\n\n<p>\n\nAfter launch, the Service NSW Energy Switch team, who we worked closely with, had embedded a cadence of testing and iteration for continuous improvement of the product and service.\n\n<p>\n\nThe initiative was so effective that leading providers responded by releasing 'no frills' plans to remain competitive.\n\n<p>\n\nAs of August 2019, Energy Switch has saved NSW residents $4,376,805 by switching providers."
     },
     {
-      "descriptionText": "### <h2>Key outputs</h2>\n\n<p>\n\n\\- Energy Switch design & front-end build \n\n<p>\n\n\\- Integration with bill scanning technology\n\n<p>\n\n\\- Launch strategy\n\n<p>\n\n\\- Project strategy video\n\n<p>\n\n\\- Co-design & testing insights\n\n<p>\n\n\\- Technical implementation recommendations\n\n<p>\n\n<p>\n\n<h2> Team </h2>\n\n<p>\n\nEmilie Browne - Product Manager\n\n<p>\n\nMichael Forbes - Designer\n\n<p>\n\nMathieu Dauner - Strategist\n\n<p>\n\nWayne Dunkley - Developer\n\n<p>\n\nRonnie Pyne - Developer\n\n<p>\n\n<h2> Agency </h2>\n\n<p>\n\nMentally Friendly"
+      "descriptionText": "<h2>Key outputs</h2>\n\n<p>\n\n\\- Energy Switch design & front-end build \n\n<p>\n\n\\- Integration with bill scanning technology\n\n<p>\n\n\\- Launch strategy\n\n<p>\n\n\\- Project strategy video\n\n<p>\n\n\\- Co-design & testing insights\n\n<p>\n\n\\- Technical implementation recommendations\n\n<p>\n \n<p>\n\n<h2> Team </h2>\n\n<p>\n\nEmilie Browne - Product Manager\n\n<p>\n\nMichael Forbes - Designer\n\n<p>\n\nMathieu Dauner - Strategist\n\n<p>\n\nWayne Dunkley - Developer\n\n<p>\n\nRonnie Pyne - Developer\n\n<p>\n\n<h2> Agency </h2>\n\n<p>\n\nMentally Friendly"
     }
   ]
 }
