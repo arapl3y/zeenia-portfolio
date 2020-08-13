@@ -10,6 +10,10 @@
   "descriptionTexts": [
     {
       "descriptionText": "<br>\n\n<h2>The challenge</h2>\n\n<p>\n\nAround 70% of people are paying more than they need for their energy. This happens for a number of reasons including a lack of engagement with utilities, high levels of friction involved in the switching process, and general distrust in energy providers and comparison sites.\n\n<p>\n\nAs a result, many people unknowingly stay with overpriced legacy plans, when they could be saving by switching to a newer plan.",
+      "descriptionImage": ""
+    },
+    {
+      "descriptionText": "<h2>We created an algorithm that uses a customer's uploaded energy bill to determine if they can save money by switching to an alternate plan.</h2>",
       "descriptionImage": "/images/uploads/snsw-energy-switch-2.png"
     },
     {
