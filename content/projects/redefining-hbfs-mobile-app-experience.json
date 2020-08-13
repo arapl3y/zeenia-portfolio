@@ -5,6 +5,11 @@
   "tags": [
     "HBF: Mobile App"
   ],
-  "intro": "<br>\n\nWIP",
-  "thumbnail": "/images/uploads/hbf.png"
+  "intro": "<br>\n\nHBF is the largest not-for-profit health insurer based in the West Coast of Australia, and have recently launched in the East. Being a NFP, they are intrinsically member-focused and ensure everything they do gives back to their users.\n\n<p>\n\nAs part of their larger Digital Transformation program, PwC Digital was engaged to help HBF transform its member experience to deliver a delightful omnichannel experience across its digital ecosystem, and lead their business strategy for their expansion into the East Coast.\n\n<p>\nA key focus for the digital transformation included co-creating an experience-led approach to reimagine HBF's web and mobile app experience.",
+  "thumbnail": "/images/uploads/hbf.png",
+  "descriptionTexts": [
+    {
+      "descriptionText": "<h2>We co-designed, built an launched a market leading mobile app experience for HBF's members.</h2>"
+    }
+  ]
 }
