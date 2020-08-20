@@ -10,6 +10,10 @@
   "descriptionTexts": [
     {
       "descriptionText": "<h2>We co-designed, built and launched a market leading mobile app experience for HBF's members.</h2>"
+    },
+    {
+      "descriptionText": "<h2> The outcome </h2>\n\n<p>\n\nAfter launch, the HBF team, who we worked closely with, had embedded a cadence of design, testing and iteration for continuous improvement of the iOS and Android apps.\n\n<p>\n\nThe apps were incredibly well-received by HBF members, with the App Store ratings skyrocketing from 2.4 to 4.8 (with over 3K reviews). The mobile app engagement and usage has also increased significantly with the addition of new features.",
+      "descriptionImage": "/images/uploads/hbf-2.png"
     }
   ]
 }
